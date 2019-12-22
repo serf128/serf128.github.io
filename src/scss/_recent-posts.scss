@@ -1,0 +1,36 @@
+.recent-posts {
+
+  &__post {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  &__meta {
+
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    color: #3d3d3d;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  &__date {
+    color: #a0a0a0;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+  }
+}

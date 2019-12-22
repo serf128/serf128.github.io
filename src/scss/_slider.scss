@@ -1,0 +1,37 @@
+.slider {
+  position:relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom:21.875%;
+
+  &__heading {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    width: fit-content;
+    font-weight: 100;
+    color: white;
+    background: black;
+    padding: 5px 37px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $screen-md) {
+    padding-bottom:60%;
+    background-position: center center;
+  }
+}

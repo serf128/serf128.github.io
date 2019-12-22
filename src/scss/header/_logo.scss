@@ -1,0 +1,14 @@
+.logo {
+  max-width: 140px;
+  margin: 22px 10px;
+
+  @media (max-width: $screen-lg) {
+    max-width: 177px;
+    margin: 17px 34px;
+  }
+
+  @media (max-width: $screen-sm) {
+    max-width: 85px;
+    margin: 17px 10px;
+  }
+}

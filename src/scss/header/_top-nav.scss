@@ -1,0 +1,35 @@
+.top-nav {
+  position: relative;
+  background: white;
+  padding: 26px 0;
+  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      padding: 10px 23px;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777777;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &-active {
+      color: $color-primary;
+    }
+  }
+}

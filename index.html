@@ -1,1 +1,258 @@
-hello
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Это тестовая верстка</title>
+  <meta name="description" content="Это тестовая верстка">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="dist/css/libs.min.css">
+  <link rel="stylesheet" href="dist/css/main.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,400i,500,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container-fluid">
+    <nav class="top-nav row">
+      <div class="container">
+        <div class="row">
+          <div class="logo-top col-md-2">
+            <a href="/"><img src="img/logo.png" alt="logo"></a>
+          </div>
+          <ul class="col-md-10 d-none d-md-flex">
+            <li><a class="top-nav__link top-nav__link-active" href="#">home</a></li>
+            <li><a class="top-nav__link" href="#">About</a></li>
+            <li><a class="top-nav__link" href="#">portfolio</a></li>
+            <li><a class="top-nav__link" href="#">blog</a></li>
+            <li><a class="top-nav__link" href="#">contact</a></li>
+            <li><a class="top-nav__link" href="#"><i class="fas fa-search"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="slider row" style="background-image: url('img/slider-bg.jpg')">
+      <div class="slider__heading">
+        <div class="container">
+          <h1 class="slider__title">News About Lian</h1>
+          <p class="slider__subtitle">Latest News & Insights</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <main class="col-md-8">
+        <div class="main__posts">
+          <article class="article">
+            <div class="article__content">
+              <a href="#" class="article__category">Wordpress</a>
+              <a href="#"><h2 class="article__h2">I am a Blog Post</h2></a>
+              <a href="#" class="article__author"><i class="fas fa-user"></i> by Jenn Pereira Pro</a>
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi
+                consectetur deleniti dolorem earum esse inventore laboriosam molestiae molestias odio officiis pariatur
+                placeat quas sed, temporibus voluptas voluptatum. Ab, provident. </p>
+              <div class="article__meta">
+                <p class="article__date">
+                  <i class="far fa-calendar"></i>on July 19, 2016
+                </p>
+                <p class="article__share">
+                  <a href="#"><i class="fas fa-share-alt"></i></a>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <picture class="article__image">
+              <img src="img/cosmetic.jpg" alt="cosmetic">
+            </picture>
+            <div class="article__content">
+              <a href="#" class="article__category article__category-Images">Images</a>
+              <a href="#"><h2 class="article__h2">I am a Blog Post with an Awesome Image</h2></a>
+              <a href="#" class="article__author"><i class="fas fa-user"></i> by Jenn Pereira Pro</a>
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi
+                consectetur deleniti dolorem earum esse inventore </p>
+              <div class="article__meta">
+                <p class="article__date">
+                  <i class="far fa-calendar"></i>on July 19, 2016
+                </p>
+                <p class="article__share">
+                  <a href="#"><i class="fas fa-share-alt"></i></a>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="article article-invers">
+            <div class="article__content">
+              <a href="#" class="article__category">Image Hover</a>
+              <a href="#"><h2 class="article__h2">I am a Blog Post</h2></a>
+              <a href="#" class="article__author"><i class="fas fa-user"></i> by Jenn Pereira Pro</a>
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi
+                consectetur deleniti... </p>
+              <div class="article__meta">
+                <p class="article__date">
+                  <i class="far fa-calendar"></i>on July 19, 2016
+                </p>
+                <p class="article__share">
+                  <a href="#"><i class="fas fa-share-alt"></i></a>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <picture class="article__image">
+              <img src="img/clock.jpg" alt="clock">
+            </picture>
+            <div class="article__content">
+              <a href="#" class="article__category article__category-Images">Images</a>
+              <a href="#"><h2 class="article__h2">I am a Blog Post with an Awesome Image</h2></a>
+              <a href="#" class="article__author"><i class="fas fa-user"></i> by Jenn Pereira Pro</a>
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi
+                consectetur deleniti dolorem earum esse inventore </p>
+              <div class="article__meta">
+                <p class="article__date">
+                  <i class="far fa-calendar"></i>on July 19, 2016
+                </p>
+                <p class="article__share">
+                  <a href="#"><i class="fas fa-share-alt"></i></a>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="article article-video">
+            <div class="article-video__iframe" id="YBBIW9UVtzQ">
+              <div class="article-video__play"></div>
+            </div>
+          </article>
+          <article class="article">
+            <picture class="article__image">
+              <img src="img/matches.jpg" alt="matches">
+            </picture>
+            <div class="article__content">
+              <a href="#" class="article__category article__category-Images">Images</a>
+              <a href="#"><h2 class="article__h2">I am a Blog Post with an Awesome Image</h2></a>
+              <a href="#" class="article__author"><i class="fas fa-user"></i> by Jenn Pereira Pro</a>
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi
+                consectetur deleniti dolorem earum esse inventore </p>
+              <div class="article__meta">
+                <p class="article__date">
+                  <i class="far fa-calendar"></i>on July 19, 2016
+                </p>
+                <p class="article__share">
+                  <a href="#"><i class="fas fa-share-alt"></i></a>
+                  <a href="#"><i class="fas fa-heart"></i></a>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="main__footer">
+          <button class="button">load more</button>
+        </div>
+      </main>
+      <aside class="sidebar col-md-4">
+        <div class="search">
+          <form class="search__form">
+            <input class="search__input" type="text" placeholder="Search">
+            <button class="search__button"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div class="widget">
+          <h3 class="widget__title">Recent Posts</h3>
+          <div class="widget__body">
+            <div class="recent-posts">
+              <div class="recent-posts__post">
+                <img class="recent-posts__img" src="img/thumb_post1.jpg" alt="cosmetics">
+                <div class="recent-posts__meta">
+                  <a href="#"><h3 class="recent-posts__title">Lorem ipsum dolor sit amet, consec</h3></a>
+                  <p class="recent-posts__date">July 5, 2016</p>
+                </div>
+              </div>
+              <div class="recent-posts__post">
+                <img class="recent-posts__img" src="img/thumb_post2.jpg" alt="notebook">
+                <div class="recent-posts__meta">
+                  <a href="#"><h3 class="recent-posts__title">Ut wisi enim ad minim veniam, quis</h3></a>
+                  <p class="recent-posts__date">July 17, 2016</p>
+                </div>
+              </div>
+              <div class="recent-posts__post">
+                <img class="recent-posts__img" src="img/thumb_post3.jpg" alt="matches">
+                <div class="recent-posts__meta">
+                  <a href="#"><h3 class="recent-posts__title">Aliquip ex ea commodo aliquam erat volutpat</h3></a>
+                  <p class="recent-posts__date">July 21, 2016</p>
+                </div>
+              </div>
+              <div class="recent-posts__post">
+                <img class="recent-posts__img" src="img/thumb_post4.jpg" alt="coffee">
+                <div class="recent-posts__meta">
+                  <a href="#"><h3 class="recent-posts__title">Ut wisi enim ad minim veniam, quis </h3></a>
+                  <p class="recent-posts__date">July 17, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="widget">
+          <h3 class="widget__title">Popular tags</h3>
+          <div class="widget__body">
+            <div class="popular-tags">
+              <a href="#" class="popular-tags__tag">construction</a>
+              <a href="#" class="popular-tags__tag">engineering</a>
+              <a href="#" class="popular-tags__tag">architecture</a>
+              <a href="#" class="popular-tags__tag popular-tags__tag-secondary">structural design</a>
+              <a href="#" class="popular-tags__tag">civil engineer</a>
+              <a href="#" class="popular-tags__tag">industrial</a>
+              <a href="#" class="popular-tags__tag">management</a>
+              <a href="#" class="popular-tags__tag">mechanical</a>
+            </div>
+          </div>
+        </div>
+        <div class="widget">
+          <h3 class="widget__title">Instagram</h3>
+          <div class="widget__body">
+            <div class="gallery">
+              <a href="#" class="gallery__item"><img src="img/gallery-1.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-2.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-3.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-4.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-5.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-6.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-7.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-8.jpg" alt="Instagram"></a>
+              <a href="#" class="gallery__item"><img src="img/gallery-9.jpg" alt="Instagram"></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="/">
+        <img class="footer__logo" src="img/logo.png" alt="footer logo">
+      </a>
+    </div>
+    <div class="footer__center">
+      <p class="footer__social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </p>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">© 2016 <a href="#">Mulitix Theme</a> by ThemeForces. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="/dist/js/libs.min.js"></script>
+  <script src="/dist/js/main.min.js"></script>
+</body>
+
+</html>

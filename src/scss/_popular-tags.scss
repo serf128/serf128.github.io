@@ -1,0 +1,19 @@
+.popular-tags {
+
+  &__tag {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 24px;
+    color: #9c9c9c;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    padding: 2px 8px;
+    margin: 0 5px 10px 0;
+
+    &-secondary {
+      color: white;
+      border: 1px solid black;
+      background: black;
+    }
+  }
+}

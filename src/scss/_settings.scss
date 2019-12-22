@@ -1,0 +1,118 @@
+$color-primary:     #333333;
+$color-secondary:   #ebebeb;
+
+$font-family:       'Roboto', sans-serif;
+
+$font-size:         14px;
+$font-size--h1:     48px;
+$font-size--h2:     24px;
+$font-size--h3:     18px;
+$font-size--h4:     18px;
+
+$line-height:       24px;
+$line-height--h1:   48px;
+$line-height--h2:   26px;
+$line-height--h3:   20px;
+$line-height--h4:   20px;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1300px;
+$screen-xxl: 1920px;
+
+html, body {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+body {
+  background-color: #fafafa;
+}
+p, a, input {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font-family;
+  letter-spacing: 0.02em;
+}
+
+a {
+  cursor: pointer;
+  color: $color-primary;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+h1 {
+  font-size: $font-size--h1;
+  line-height: $line-height--h1;
+  font-family: $font-family;
+}
+h2 {
+  font-size: $font-size--h2;
+  line-height: $line-height--h2;
+  font-family: $font-family;
+}
+h3 {
+  font-size: $font-size--h3;
+  line-height: $line-height--h3;
+  font-family: $font-family;
+}
+h4 {
+  font-size: $font-size--h4;
+  line-height: $line-height--h4;
+  font-family: $font-family;
+}
+
+img, svg, picture {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: $screen-lg) {
+  p, a, input {
+    font-size:  16px;
+    line-height: 19px;
+  }
+  h1 {
+    font-size: 32px;
+    line-height: 34px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  p, a, input {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.text-center {
+  text-align: center;
+}
