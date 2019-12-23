@@ -29,7 +29,7 @@ const cssLibFiles = [
 const jsLibFiles = [
     //'node_modules/jquery/dist/jquery.js',
     //'node_modules/owl.carousel/dist/owl.carousel.js',
-    'node_modules/@fortawesome/fontawesome-free/js/all.js'
+    //'node_modules/@fortawesome/fontawesome-free/js/all.js'
     // 'src/js/jquery.maskedinput.min.js',
     // 'src/js/bootstrap.min.js',
     // 'src/js/wow.min.js',
@@ -42,10 +42,10 @@ function css() {
         .pipe(plumber())
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('main.min.css'))
-        // .pipe(postcss([
-        //     autoprefixer(),
-        //     cssnano()
-        // ]))
+        .pipe(postcss([
+            autoprefixer(),
+            cssnano()
+        ]))
         .pipe(gulp.dest('./dist/css/'))
         .pipe(browserSync.stream());
 }
@@ -58,9 +58,9 @@ function js() {
         //     presets: ['env']
         // }))
         .pipe(concat('main.min.js'))
-        // .pipe(uglify({
-        //     toplevel: true
-        // }))
+        .pipe(uglify({
+            toplevel: true
+        }))
         .pipe(gulp.dest('./dist/js/'));
 }
 function cssLibs() {
@@ -76,19 +76,19 @@ function cssLibs() {
         .pipe(gulp.dest('./dist/css/'));
 }
 
-function jsLibs() {
-    return gulp
-        .src(jsLibFiles)
-        .pipe(plumber())
-        // .pipe(babel({
-        //     presets: ['env']
-        // }))
-        .pipe(concat('libs.min.js'))
-        // .pipe(uglify({
-        //     toplevel: true
-        // }))
-        .pipe(gulp.dest('./dist/js/'));
-}
+// function jsLibs() {
+//     return gulp
+//         .src(jsLibFiles)
+//         .pipe(plumber())
+//         // .pipe(babel({
+//         //     presets: ['env']
+//         // }))
+//         .pipe(concat('libs.min.js'))
+//         .pipe(uglify({
+//             toplevel: true
+//         }))
+//         .pipe(gulp.dest('./dist/js/'));
+// }
 
 function browserSyncInit(done) {
     browserSync.init({
@@ -114,6 +114,6 @@ function watchFiles() {
     gulp.watch('./*.html', browserSyncReload);
 }
 
-gulp.task('build', gulp.parallel(cssLibs, jsLibs, js, css));
-gulp.task('watch', gulp.series(cssLibs, jsLibs, js, css, browserSyncInit, watchFiles));
+gulp.task('build', gulp.parallel(cssLibs, js, css));
+gulp.task('watch', gulp.series(cssLibs, js, css, browserSyncInit, watchFiles));
 gulp.task('default', gulp.series('watch'));
